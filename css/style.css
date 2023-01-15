@@ -406,7 +406,7 @@ p {
 }
 
 /* media query styles */
-/* medium screen */
+/* medium screen and under*/
 @media only screen and (max-width: 768px) {
     /* .container {
         margin: 0 auto;
@@ -494,7 +494,6 @@ p {
     }
 
     .navbar ul {
-        /* height: 400px; */
         flex-direction: column;
         gap: 1rem;
     }
