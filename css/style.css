@@ -38,6 +38,7 @@ p {
 .container {
     max-width: 1100px;
     margin: 0 auto;
+    padding: 0 40px;
 }
 
 .flex {
@@ -308,9 +309,10 @@ p {
 }
 
 /* form fill up  part */
-.form-fill-up {
-    height: 400px;
-}
+/* .form-fill-up {
+    height: auto;
+
+} */
 
 .form-fill-up h1 {
     font-size: 2.5rem;
@@ -342,7 +344,7 @@ p {
     border-bottom: 1px solid #b4becb;
     width: 100%;
     padding: 3px;
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin: .5rem 0;
 
 }
@@ -356,6 +358,8 @@ p {
     background: #FFF4E7;
     text-align: center;
     border-radius: 5px;
+    margin-top: 1.5rem;
+    padding: 1.5rem 3rem;
 
 }
 
@@ -398,4 +402,78 @@ p {
     100% {
         transform: translateX(0);
     }
+}
+
+/* media query styles */
+/* medium screen */
+@media only screen and (max-width: 768px) {
+    /* .container {
+        margin: 0 auto;
+    } */
+
+    .navbar .flex,
+    .flex {
+        flex-direction: column;
+
+    }
+
+    .banner-text,
+    .features-list-img,
+    .features-list-text,
+    .features-variation-description,
+    .features-variation-card,
+    .features-variation-img,
+    .sponsors-text {
+        width: 100%;
+        margin-top: 1.25rem;
+    }
+
+    .features-list-text,
+    .features-variation-description,
+    .features-variation-card,
+    .features-variation .flex,
+    .facts-text h1,
+    .sponsors-text h1,
+    .facts-text p,
+    .sponsors-text p,
+    .form-fill-up h1,
+    .form-fill-up p {
+        text-align: center;
+
+    }
+
+    .features-variation-card {
+        gap: 1rem;
+    }
+
+    .features-variation-description>p {
+        text-align: center;
+        padding-left: 3rem;
+    }
+
+    .features-variation-img a,
+    .form-text a {
+        position: relative;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%);
+    }
+
+    .facts-card {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+        gap: 20px;
+
+    }
+
+    .facts-card .flex {
+        justify-self: center;
+    }
+
+    .sponsors-partners,
+    .form-fill-up .grid {
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+    }
+
 }
