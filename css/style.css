@@ -25,7 +25,12 @@ span {
 }
 
 section {
-    margin-bottom: 3rem;
+    padding-top: 3rem;
+}
+
+p {
+    color: #727272;
+    line-height: 1.5rem;
 }
 
 /* css utilities */
@@ -49,10 +54,14 @@ section {
     color: #fff;
     border: none;
     border-radius: 8px;
+    text-align: center;
 }
 
 .btn:hover {
     transform: scale(0.98);
+    background: #002240;
+    border: 1px solid #FF900E;
+    margin: -2px;
 }
 
 /* navbar styles*/
@@ -155,4 +164,64 @@ section {
 
 .features-list-text .btn {
     margin-top: 1rem;
+}
+
+/* features variation styles */
+
+.features-variation-description {
+    width: 50%;
+    /* display: grid;
+    grid-template-columns: repeat(1, 1fr); */
+}
+
+.features-variation-description h1 {
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
+    padding: 0 1.25rem;
+    color: #131313;
+    border-left: 5px solid #FF900E;
+}
+
+.features-variation-description>p {
+    margin-right: 5rem;
+}
+
+.features-variation-card {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    margin: .5rem 0;
+    margin-right: 5rem;
+    padding: 1rem 1.5rem;
+}
+
+.features-variation-card h4 {
+    margin-bottom: .5rem;
+}
+
+.features-variation-card p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.features-variation-img {
+    width: 50%;
+}
+
+.features-variation-img img {
+    width: 100%;
+}
+
+.features-variation-img a {
+    position: relative;
+    left: -4rem;
+    top: -4rem;
+    margin: -1px;
+}
+
+.features-variation-img a>h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #FFFFFF;
 }
