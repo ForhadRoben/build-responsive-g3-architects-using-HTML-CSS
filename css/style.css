@@ -38,7 +38,8 @@ p {
 .container {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .flex {
@@ -309,10 +310,10 @@ p {
 }
 
 /* form fill up  part */
-/* .form-fill-up {
+.form-fill-up {
     height: auto;
 
-} */
+}
 
 .form-fill-up h1 {
     font-size: 2.5rem;
@@ -358,7 +359,7 @@ p {
     background: #FFF4E7;
     text-align: center;
     border-radius: 5px;
-    margin-top: 1.5rem;
+    margin-top: 3rem;
     padding: 1.5rem 3rem;
 
 }
@@ -418,10 +419,11 @@ p {
     }
 
     .banner-text,
+    .banner-img,
     .features-list-img,
     .features-list-text,
     .features-variation-description,
-    .features-variation-card,
+
     .features-variation-img,
     .sponsors-text {
         width: 100%;
@@ -443,7 +445,8 @@ p {
     }
 
     .features-variation-card {
-        gap: 1rem;
+        margin: .5rem 4rem;
+        /* gap: 1rem; */
     }
 
     .features-variation-description>p {
@@ -457,6 +460,12 @@ p {
         left: 50%;
         top: 0;
         transform: translate(-50%);
+    }
+
+    .features-variation-img .btn:hover,
+    .form-text .btn:hover {
+        transform: translate(-50%);
+        margin: -2px;
     }
 
     .facts-card {
@@ -474,6 +483,30 @@ p {
     .form-fill-up .grid {
         grid-template-columns: repeat(1, 1fr);
         place-items: center;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+    .navbar {
+        height: 300px;
+        padding-top: 2.25rem;
+    }
+
+    .navbar ul {
+        /* height: 400px; */
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .navbar ul li {
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .features-list-img,
+    .facts-card {
+        grid-template-columns: repeat(1, 1fr);
     }
 
 }
