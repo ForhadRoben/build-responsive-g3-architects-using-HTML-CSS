@@ -10,6 +10,7 @@
 /* common styles */
 body {
     font-family: 'Work Sans', sans-serif;
+    background-color: #f4f4f4;
 }
 
 ul {
@@ -41,6 +42,15 @@ p {
 
 .flex {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -130,9 +140,6 @@ p {
 }
 
 /* features list styles */
-.features-list {
-    /* text-align: ; */
-}
 
 .features-list-img {
     width: 50%;
@@ -298,6 +305,58 @@ p {
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
     filter: grayscale(100%);
+}
+
+/* form fill up  part */
+.form-fill-up {
+    height: 400px;
+}
+
+.form-fill-up h1 {
+    font-size: 2.5rem;
+}
+
+.form-fill-up p {
+    margin: 20px 0;
+}
+
+.form-fill-up .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.form-info {
+    width: 400px;
+
+}
+
+.form-info a,
+.form-text a {
+    margin: -1px;
+}
+
+.form-info input[type='text'],
+.form-info input[type='email'],
+.form-info input[type='password'] {
+    border: 0;
+    border-bottom: 1px solid #b4becb;
+    width: 100%;
+    padding: 3px;
+    font-size: 1rem;
+    margin: .5rem 0;
+
+}
+
+.form-info input:focus {
+    outline: none;
+}
+
+/* footer part */
+.footer {
+    background: #FFF4E7;
+    text-align: center;
+    border-radius: 5px;
+
 }
 
 /* Animations */
