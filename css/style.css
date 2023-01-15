@@ -229,12 +229,14 @@ p {
 
 /* facts styles */
 
-.facts-text h1 {
+.facts-text h1,
+.sponsors-text h1 {
     font-size: 2rem;
     margin-bottom: 1.25rem;
 }
 
-.facts-text p {
+.facts-text p,
+.sponsors-text p {
     margin-bottom: 1.25rem;
 }
 
@@ -283,6 +285,19 @@ p {
 .facts-card .flex img {
     width: 100%;
     margin-bottom: .5rem;
+}
+
+/* sponsorship part styles */
+.sponsors-text {
+    width: 50%;
+    text-align: center;
+}
+
+.sponsors-partners {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    filter: grayscale(100%);
 }
 
 /* Animations */
