@@ -329,7 +329,7 @@ p {
 }
 
 .form-info {
-    width: 400px;
+    width: auto;
 
 }
 
@@ -494,6 +494,7 @@ p {
     }
 
     .navbar ul {
+
         flex-direction: column;
         gap: 1rem;
     }
